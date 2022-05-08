@@ -1,0 +1,15 @@
+.bar{
+	width: 25px;
+	height: 100px;
+	display: inline-block;
+	background-color: green;
+	margin: 5px;
+}
+
+.bar:hover {
+	fill: brown;
+}
+
+.svg2 {
+	border: 2px solid green;
+}

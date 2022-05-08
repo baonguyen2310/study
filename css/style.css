@@ -1,0 +1,73 @@
+:root {
+    --greyDark: #c0c0c0;
+    --greyLight:#cfcfcf;
+}
+
+html {
+    font-size: 100%;
+}
+
+#container{
+    position: relative;
+    background-color: burlywood;
+    height: 1000px;
+}
+
+.test {
+    color: var(--greyLight, red);
+    width: 50vw;
+    height: 100px;
+    background-color: #000;;
+}
+
+.test::before {
+    content: "pseudo-element";
+    display: block;
+    background-color: red;
+}
+
+.test::after {
+    content: "pseudo-after";
+    display: block;
+    background-color: aqua;
+
+}
+
+test2::first-letter {
+    font-size: 100px;
+}
+
+::selection {
+    background-color: violet;
+}
+
+.test:hover {
+    background-color: aliceblue;
+}
+
+.test:active {
+    background-color: antiquewhite;
+}
+
+ul li:last-child {
+    color:aqua;
+}
+
+.test2 {
+    color: var(--greyDark, red);
+    position: fixed;
+    top: 0px;
+
+}
+
+a:hover {
+    color: green;
+}
+a:link {
+    color:aqua;
+}
+
+a:visited {
+    color: yellow;
+}
+

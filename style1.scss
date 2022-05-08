@@ -1,0 +1,49 @@
+/*
+npm install -g sass
+sass source/stylesheets/index.scss build/stylesheets/index.css 
+*/
+
+$text-color: red;
+$border: 2px solid purple;
+
+@mixin border-stroke($val){
+    @if $val == light{
+      border: 1px solid black;
+    }
+    @else if $val == medium{
+      border: 3px solid black;
+    }
+    @else if $val == heavy{
+      border: 6px solid black;
+    }
+    @else {
+      border: none;
+    }
+  }
+
+@for $i from 1 through 6 {
+    .text-#{$i} {
+      font-size: 15px * $i;
+    }
+  }
+
+@each $color in blue, black, red, pink, yellow {
+    .#{$color}-bg {
+      background-color: $color;
+    }
+  }
+
+.sass {
+	background: linear-gradient(45deg, black, yellow);
+
+
+	h2 {
+	color: $text-color;
+	}
+	p {
+		border: $border;
+		@include border-stroke(medium);
+		@extend h2;
+
+	}
+}

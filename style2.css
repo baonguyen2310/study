@@ -1,0 +1,89 @@
+:root{
+	--var1:gray;
+}
+body {
+	/*background-color:#ccc;*/
+	background-image: url("https://thumbs.dreamstime.com/b/spring-background-pink-flowers-heart-petals-greeting-card-woman-day-flat-lay-top-view-style-109972453.jpg");
+	background-repeat: repeat-x; /*no-repeat, repeat*/
+	background-position: 200px 100px;
+	background-attachment: fixed; /*fixed nam im, scroll chay theo srollbar*/
+}
+h1 {
+	background: 	url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg")
+					no-repeat -300px scroll;
+	position: fixed; /*relative, absolute*/
+	top: 100px;
+	z-index: 1;
+}
+h1 {
+	font-family: georgia, serif;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: 100;
+	font-size: 40px;
+
+}
+ol li {
+	position: relative ;
+	z-index: 2;
+	font-size: 1.5em;
+	color: "#ccc";
+	direction: ltr;
+	letter-spacing: 10px;
+	word-spacing: 50px;
+}
+ul {
+	list-style-type: lower-greek;
+}
+#li1{
+	list-style-image:  url("https://media.hoclaptrinh.vn/examples/hoc-css/list-style.png");
+}
+#van {
+	text-indent: 2cm;
+	text-align: left;
+	text-decoration: underline; /*overline, line-through*/
+	text-decoration-color: darkred;
+	text-transform: capitalize; /*uppercase, lowercase*/
+	text-shadow: 4px 4px 8px blue;
+}
+#hinh {
+	opacity: 0.5;
+	height: 300px;
+	width: 500px;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+    background-color:var(--var1, red);
+    color: #ccc;
+}
+
+#doan {
+	border-top-color: blue !important;
+	border-top-width: 2px;
+	border-top-style: solid;
+}
+
+#doan {
+	border: dashed 1px green;
+	outline: dotted thick black;
+	outline-offset: 20px;
+	margin-left: 400px;
+	margin: 50px 400px 50px;
+	padding: 100px;
+	cursor: move;
+	max-height: 10px;
+	overflow: auto;
+}
+
+[type='submit']{
+	transform: scale(1.5);
+}

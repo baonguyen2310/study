@@ -1,0 +1,96 @@
+h4{
+	height:50px;
+	text-align:center;
+	font-style:italic;
+	padding:20px;
+	background-color:rgba(45,45,45,0.1);
+	border:5px solid black;
+	margin-left:500px;
+	margin-right:500px;
+	font-size:2em;
+	font-weight:400;
+}
+p{
+	margin:auto;
+	width:200px;
+	text-align:justify;
+	text-transform:capitalize;
+	font-size:16px;
+	line-height:25px;
+}
+#joke1{
+	box-shadow:1px 5px 6px 6px rgba(0,0,0,0.1);
+	background:linear-gradient(35deg,#CCFFFF,#FFCCCC);
+}
+.link{
+	opacity:0.7;
+}
+#link1{
+	position:relative;
+
+}
+#link2{
+	position:absolute;
+
+}
+#link3{
+	position:fixed;
+
+}
+a:hover{
+	transform: scale(1.5);
+	transform: skewX(34deg);
+	opacity:1;
+}
+body{
+	min-height:150vh;
+}
+#float1{
+	font-size:36px;
+	float:left;
+	width:40%;
+	background: repeating-linear-gradient(45deg, yellow 0px, yellow 20px, black 20px, black 40px) ;
+}
+#float2{
+	font-size:36px;
+	float:right;
+	width:40%;
+
+}
+.moon{
+	position:relative;
+	top:50px;
+	margin:auto;
+	height: 100px;
+	width: 100px;
+	background-color:transparent; /*trong suot*/
+	border-radius: 50%;
+	box-shadow: 25px 10px 5px 0 green;
+}
+.start{
+	position:fixed;
+	top:60%;
+	height: 50px;
+	width:50px;
+	border-radius: 50%;
+	animation-name: jump;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode:forwards; /*giu lai mau khi het animation*/
+}
+#start1{
+	background: yellow;
+	left:25%;
+	animation-timing-function:linear;
+}
+#start2{
+	background:lightgreen;
+	left:75%;
+	animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+}
+@keyframes jump{
+	50%{
+		top: 10%;
+		opacity: 0.3;
+	}
+}

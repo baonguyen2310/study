@@ -1,0 +1,60 @@
+/*
+npm install -g sass
+sass source/stylesheets/index.scss build/stylesheets/index.css 
+*/
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.text-6 {
+  font-size: 90px;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.yellow-bg {
+  background-color: yellow;
+}
+
+.sass {
+  background: linear-gradient(45deg, black, yellow);
+}
+.sass h2, .sass p {
+  color: red;
+}
+.sass p {
+  border: 2px solid purple;
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=style1.css.map */

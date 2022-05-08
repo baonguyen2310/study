@@ -1,0 +1,14 @@
+.test {
+    color: blue;
+}
+
+.testDisplay {
+    background-color: aqua;
+    color: pink;
+    display: list-item;
+    width: 70%;
+}
+
+.image {
+    float: right;
+}
